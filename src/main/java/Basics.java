@@ -7,6 +7,8 @@
  * relevant readings for each task.
  */
 
+import static org.junit.Assert.assertEquals;
+
 /**
  *  1. In Java, no code can exist outside of a class. Unlike Python which uses
  *    functions, all code in Java uses methods.
@@ -181,7 +183,7 @@ public class Basics {
         if (arr.length <= 1){
             return 0;
         } else {
-            for (int i = 1; i <= arr.length - 2; i += 2) {
+            for (int i = 1; i <= arr.length - 1; i += 2) {
                 current_sum += arr[i];
             }
         }
